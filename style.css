@@ -1,15 +1,53 @@
 @charset "UTF-8";
 
-/****************** Breakpoints ******************/
+/* <<<<<< Importação da fonte OPEN SANS diretamente do google fonts >>>>>> */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Layoud */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em; /* 1em = 100% (tamanho padrão) */
+}
+
+.container {
+    margin: 0 auto;      /* O comando 0 auto centraliza o bloco */
+}
+
 
 /* Smartphone Portrait >>>>*/
+
+/* Cabeçalho */
+header {
+    height: 78px;
+    background-color: #00ffff;
+}
+
+#logo img {
+    width: 70px;
+    height: 70px;
+    margin: 5px 0px 0px 5px;
+}
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 /* Smartphone Landscape >>>>*/
 @media (min-width: 576px) {
-    body {
-        background-color: darkolivegreen;
+    /* Cabeçalho */
+    #logo img {
+        margin: 5px 0px 0px 0px;
+    }
+    .container {
+        max-width: 540px;
+        background-color: #ffff00;
     }
 }
 
@@ -17,8 +55,17 @@
 
 /* Tablet Portrait >>>>>*/
 @media (min-width: 768px) {
-    body {
-        background-color: #00d9ff
+    /* Cabeçalho */
+    .container {
+        max-width: 720px;
+        background-color: #00ff00;
+    }
+    header {
+        height: 115px;
+    }
+    #logo img {
+        width: 105px;
+        height: 105px;
     }
 }
 
@@ -26,8 +73,10 @@
 
 /* Tablet Landscape >>>>>*/
 @media (min-width: 992px) {
-    body {
-        background-color: #012455
+    /* Cabeçalho */
+    .container {
+        max-width: 960px;
+        background-color: #ffa500;
     }
 }
 
@@ -35,8 +84,17 @@
 
 /* PCs / Notebooks >>>>>*/
 @media (min-width: 1200px) {
-    body {
-        background-color: #ff0000
+    .container {
+        max-width: 1140px;
+        background-color: #ff0092;
+    }
+    header {
+        height: 125px;
+    }
+    #logo img {
+        width: 115px;
+        height: 115px;
+
     }
 }
 
@@ -44,8 +102,16 @@
 
 /* Telas FullHD / 4k / SmartTVs >>>>>*/
 @media (min-width: 1400px) {
-    body {
-        background-color: #a200ff
+    .container {
+            max-width: 1360px;
+            background-color: #7d5b3c;
+    }
+    header {
+        height: 155px;
+    }
+    #logo img {
+        width: 150px;
+        height: 150px;
     }
 }
 
