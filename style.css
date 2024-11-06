@@ -48,7 +48,6 @@ body {
 /* Cabeçalho */
 header {
     height: 100px;
-    background-color: rgb(151, 151, 151);
 }
 
 #logo img {
@@ -61,7 +60,7 @@ header {
     display: none;
 }
 
-/* Efeito de deslizar o menu */
+/* Efeito "deslizar o menu" */
 /* Se check estiver "ticado", crir um estilo para ul*/
 #check:checked~ul {
     right: 0;
@@ -104,7 +103,8 @@ nav ul li a {
 /* Video */
 main {
     height: 55vh;
-    position: relative;    
+    position: relative;
+    z-index: -1;    
 }
 
 main video {
@@ -178,6 +178,7 @@ main h2 {
         width: 50%;
         right: -50%;
     }
+    
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
