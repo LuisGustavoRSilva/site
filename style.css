@@ -148,7 +148,7 @@ main h2 {
 
 /* >>>>>>>>>>> Destaque >>>>>>>>>> */
 #destaque {
-    background: var(--background);
+    background: url(img/background.png);
     background-size: cover;
     background-position: center;
     padding: 50px 15px;
@@ -198,6 +198,7 @@ margin-bottom: 15px;
     font-weight: 600;
 
 }
+
 /* para sumir a imagem
 #imagemDestaque {
     display: none;
