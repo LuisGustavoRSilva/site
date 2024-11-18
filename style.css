@@ -9,7 +9,7 @@
 :root {
     --background: #ffffff;
     --branco: #000000;
-    --amarelo: #67bde5;
+    --amarelo: #67d2e5;
     --azul: #000000;
     --azulEscuro: #05152b;
     --cinzaClaro: #d6d6d6;
@@ -45,14 +45,13 @@ body {
 
 .botao {
     text-decoration: none;
-    color: var(--branco);
+    color: var(--background);
     font-size: 1.3em;
     font-weight: 700;
     background-color: var(--laranja);
     width: 160px;
     padding: 10px 0px;
     border: 2px solid var(--branco);
-    border-radius: 25px;
     align-self: center;
     margin-top: 30px;
 }
@@ -146,42 +145,44 @@ main h2 {
     font-weight: 800;
 }
 
-/* >>>>>>>>>>> Destaque >>>>>>>>>> */
+/******* Destaque *******/
 #destaque {
     background: url(img/background.png);
     background-size: cover;
     background-position: center;
+    /* espaçamento interno para não encostar na borda da tela do dispositivo */
     padding: 50px 15px;
-    /* Padding é o espaçamento interno para não
-    encostar na porta do dispositivo */
 }
 
-/* Atenção!!! Organizando o container após o destaque
-o estilo é aplicado apenas ao container da seção de destaque */
-
-#destaque .container{
+/* Atenção!!! Organizando o container após o destaque o estilo é aplicado apenas ao container da seção de destaque */
+#destaque .container {
     flex-direction: column;
     align-items: center;
-
 }
+
+/* Para esconder a imagem usamos "display: none" no container da imagem | Para exibir novamente em telas maiores, usamos "display: block" */
+/*
+#imagemDestaque {
+    display: none;
+}
+*/
 #imagemDestaque img {
     width: 200px;
     height: 200px;
-/* arrendondar uma imagem quadrada*/
+    /* arredondar uma imagem quadrada */
 }
-
 
 #textoDestaque {
     color: var(--branco);
 }
+
 #textoDestaque h2 {
     margin-bottom: 20px;
-
 }
 
+/* Atenção !!! Detalhe do sinal ">" ref. ao elemento imediato */
 #textoDestaque>p {
-color: var(--azul);
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .topicos {
@@ -194,21 +195,35 @@ margin-bottom: 15px;
     margin-right: 10px;
 }
 
-.topico p {
+.topicos p {
     font-weight: 600;
-
 }
 
-/* para sumir a imagem
-#imagemDestaque {
-    display: none;
-}
-*/
-#destaque .container {
+/****** Sobre ******/
+/* O estilo abaixo será aplicado apenas ao container que está subordinado a section "sobre" */
+#sobre .container {
     flex-direction: column;
-    align-items: center;
 }
-/* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
+
+#sobre {
+    padding: 50px 15px;
+}
+
+#sobre h2, p {
+    color: var(--branco);
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    margin-top: 20px;
+}
+
+/* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -234,16 +249,26 @@ margin-bottom: 15px;
     main h1 {
         font-size: 3em;
     }
+
+    /****** destaque ******/
     #destaque .container {
         flex-direction: row;
     }
+
     #imagemDestaque {
         margin-right: 50px;
     }
+
     #imagemDestaque img {
         width: 256px;
         height: 256px;
-}
+    }
+
+    /****** Sobre ******/
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
 }
 
 /* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
@@ -267,7 +292,7 @@ margin-bottom: 15px;
         font-size: 4em;
     }
 
-    /* >>>>>>>>>>>>>>>>>>>>>>>>> Destaque */
+    /****** Destaque ******/
     #imagemDestaque img {
         width: 440px;
         height: 440px;
@@ -290,9 +315,6 @@ margin-bottom: 15px;
     main {
         height: 70vh;
     }
-
-
-    
 }
 
 /* Fim | Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -304,7 +326,7 @@ margin-bottom: 15px;
     /****** Layout ******/
     .container {
         max-width: 1140px;
-        /* background-color: #ff009d; */
+        /* background-color: #ff009d; */       
     }
 
     /****** Cabeçalho ******/
@@ -353,10 +375,21 @@ margin-bottom: 15px;
         font-size: 3em;
     }
 
+    /****** Destaque ******/
     #destaque {
+        /* O código abaixo fixa o banner (efeito parallax) */
         background-attachment: fixed;
     }
 
+    /******* Sobre ******/
+    #sobre .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #video iframe {
+        margin: 0;
+    }
 }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -380,4 +413,9 @@ margin-bottom: 15px;
         font-size: 6.5em;
     }
 
+    main h2 {
+        font-size: 4em;
+    }
 }
+
+/* Fim | Telas Grandes (FullHD / 4K / SmartTV) >>>>>*/
