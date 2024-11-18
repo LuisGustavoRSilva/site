@@ -8,8 +8,8 @@
 /* Variáveis */
 :root {
     --background: #ffffff;
-    --branco: #ffffff;
-    --amarelo: #5dd9ffd2;
+    --branco: #000000;
+    --amarelo: #67bde5;
     --azul: #000000;
     --azulEscuro: #05152b;
     --cinzaClaro: #d6d6d6;
@@ -18,7 +18,6 @@
     --pink: #b05279;
     --roxo: #9e86c8;
     --verde: #b4d273;
-    --preto: #000000;
 }
 
 /* CSS Reset (compatibilizar com todos navegadores) */
@@ -110,46 +109,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--azul);
+    color: var(--background);
     /* remover sublinhado */
     text-decoration: none;
-}
-
-/* Destaque */
-#destaque{
-    background: url();
-    background-size: cover;
-    background-position: center;
-    /* Espaçamento interno para não encostar ma borda da tela do dispositivo */
-    padding: 50px 15px;
-}
-/* ATENÇÃO! Organizando o container após o destaque e estilo é aplicado apenas ao container da seção destaque */
-#destaque.container{ 
-    flex-direction: column;
-    align-items: center;
-}
-
-
-#imagemDestaque img{
-    width: 300px;
-    height: 230px;
-
-}
-#textoDestaque{
-    color: var(--preto);
-}
-#textoDestaque h2{
-    margin-bottom: 20px;
-}
-#textoDestaque>p{
-    color: var(--preto);
 }
 
 /****** Banner ******/
 main {
     height: 60vh;
     /* ajuste da altura do Banner */
-    background: url(img/banner\ katchau.png);
+    background: url(img/banner2.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -171,12 +140,73 @@ main h1 {
 }
 
 main h2 {
-    color: var(--branco);
+    color: var(--background);
     font-size: 2.2em;
     margin-top: 25px;
     font-weight: 800;
 }
 
+/* >>>>>>>>>>> Destaque >>>>>>>>>> */
+#destaque {
+    background: var(--background);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    /* Padding é o espaçamento interno para não
+    encostar na porta do dispositivo */
+}
+
+/* Atenção!!! Organizando o container após o destaque
+o estilo é aplicado apenas ao container da seção de destaque */
+
+#destaque .container{
+    flex-direction: column;
+    align-items: center;
+
+}
+#imagemDestaque img {
+    width: 200px;
+    height: 200px;
+/* arrendondar uma imagem quadrada*/
+}
+
+
+#textoDestaque {
+    color: var(--branco);
+}
+#textoDestaque h2 {
+    margin-bottom: 20px;
+
+}
+
+#textoDestaque>p {
+color: var(--azul);
+margin-bottom: 15px;
+}
+
+.topicos {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.topicos img {
+    margin-right: 10px;
+}
+
+.topico p {
+    font-weight: 600;
+
+}
+/* para sumir a imagem
+#imagemDestaque {
+    display: none;
+}
+*/
+#destaque .container {
+    flex-direction: column;
+    align-items: center;
+}
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 
@@ -203,6 +233,16 @@ main h2 {
     main h1 {
         font-size: 3em;
     }
+    #destaque .container {
+        flex-direction: row;
+    }
+    #imagemDestaque {
+        margin-right: 50px;
+    }
+    #imagemDestaque img {
+        width: 256px;
+        height: 256px;
+}
 }
 
 /* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
@@ -225,6 +265,12 @@ main h2 {
     main h1 {
         font-size: 4em;
     }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>> Destaque */
+    #imagemDestaque img {
+        width: 440px;
+        height: 440px;
+    }
 }
 
 /* Fim | Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -243,6 +289,9 @@ main h2 {
     main {
         height: 70vh;
     }
+
+
+    
 }
 
 /* Fim | Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -302,6 +351,11 @@ main h2 {
     main h2 {
         font-size: 3em;
     }
+
+    #destaque {
+        background-attachment: fixed;
+    }
+
 }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -325,9 +379,4 @@ main h2 {
         font-size: 6.5em;
     }
 
-    main h2 {
-        font-size: 4em;
-    }
 }
-
-/* Fim | Telas Grandes (FullHD / 4K / SmartTV) >>>>>*/
