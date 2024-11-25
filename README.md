@@ -6,4 +6,5 @@ Estudo do HTML5 e CSS3
 Luis Gustavo Rodrigues Da Silva
 
 ## Site
-![](img/qrcode.png).
+![](img/qrcode.png)
+
