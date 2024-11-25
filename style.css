@@ -62,7 +62,7 @@ body {
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /****** Cabeçalho ******/
 header {
-    height: 65px;
+    height: 100px;
     /* background-color: #00ffff;*/
 }
 
@@ -126,11 +126,12 @@ main {
     text-align: center;
 }
 
-main h1,
-h2 {
+main h1
+ {
     /* efeito de sombra nos textos */
-    text-shadow: #000 0.05em 0.05em 0.05em;
+    text-shadow: #000000 0.05em 0.05em 0.05em;
 }
+
 
 main h1 {
     color: var(--amarelo);
@@ -331,7 +332,7 @@ main h2 {
 
     /****** Cabeçalho ******/
     header {
-        height: 100px;
+        height: 155px;
     }
 
     #logo img {
