@@ -59,6 +59,37 @@ body {
     margin-top: 30px;
 }
 
+/* Layout para 3 cartões */
+
+.card {
+    width: 250px;
+    height: 420px;
+    background-color: var(--cinza);
+    border: 1px solid var(--azulEscuro);
+    margin-top: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card p {
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+}
+
+.card a {
+    padding: 10px 50px;
+    border: 0;
+    border-radius: 10px;
+}
+
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
@@ -239,11 +270,25 @@ main h2 {
     flex-direction: column;
 }
 .qrcode {
-    padding-left: 85px;
-    width: 200px;
-    height: 200px;
+    flex-direction: center;
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
 }
 
+/* sessão de conteudo */
+#conteudo {
+    padding: 20px 0px;
+}
+
+#conteudo .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h2 {
+    margin-bottom: 25px;
+} 
 
 /* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -419,6 +464,19 @@ main h2 {
     }
     
 }
+/* sessão de conteudo */
+
+#conteudo {
+    padding: 20px 0px;
+}
+
+#conteudo .container {
+    display: flex;
+}
+
+#conteudo h2 {
+    margin-bottom: 25px;
+} 
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
