@@ -240,7 +240,9 @@ main h2 {
 }
 .qrcode {
     padding: 20px 20px;
-    border-radius: 100px;
+    border-radius: 50px;
+    width: 230px;
+    height: 230px;
 }
 
 
