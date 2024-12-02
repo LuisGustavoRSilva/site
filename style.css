@@ -239,8 +239,7 @@ main h2 {
     flex-direction: column;
 }
 .qrcode {
-    padding-left: 60px;
-    border-radius: 50px;
+    padding-left: 85px;
     width: 200px;
     height: 200px;
 }
