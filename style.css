@@ -27,9 +27,18 @@
     margin: 0;
     padding: 0;
     border: 0;
+    overflow-x: hidden;
 }
 
 /* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+   /* Rolagem suave */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
@@ -56,19 +65,23 @@ body {
     border: 2px solid var(--branco);
     border-radius: 25px;
     align-self: center;
-    margin-top: 30px;
+    margin-top: 10px;
+    align-items: center;
 }
 
 /* Layout para 3 cartões */
 
 .card {
     width: 250px;
-    height: 420px;
+    height: 450px;
     background-color: var(--cinza);
     border: 1px solid var(--azulEscuro);
-    margin-top: 25px;
+    margin-top: 45px;
     border-radius: 25px;
     text-align: center;
+    display: inline-block;
+    margin-left: 65px;
+    overflow-x: hidden;
 }
 
 .card img {
@@ -90,19 +103,27 @@ body {
     border-radius: 10px;
 }
 
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /****** Cabeçalho ******/
 header {
-    height: 100px;
+    height: 110px;
     /* background-color: #00ffff;*/
 }
 
 #logo img {
-    width: 128px;
-    height: 128px;
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 #check {
@@ -253,8 +274,8 @@ main h2 {
 }
 
 #video iframe {
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     margin-top: 30px;
 }
 
@@ -263,7 +284,14 @@ main h2 {
     background: url(img/background.jpg);
     background-size: cover;
     background-position: center;
-    padding: 250px 15px 320px;
+    padding: 200px 0px 30px 0px;
+}
+
+#textoFaixa {
+    padding-left: 70px;
+    font-size: 2.5em;
+    margin-top: 100px;
+    color: var(--ciano);
 }
 
 #faixaDestaque .container {
@@ -271,9 +299,11 @@ main h2 {
 }
 .qrcode {
     flex-direction: center;
-    margin-top: 50px;
+    margin-top: 10px;
     width: 250px;
     height: 250px;
+    border-radius: 25px;
+    margin-left: 70px;
 }
 
 /* sessão de conteudo */
@@ -289,6 +319,16 @@ main h2 {
 #conteudo h2 {
     margin-bottom: 25px;
 } 
+
+/* área de contato */
+.topicon {
+    background: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0px 325px 0px;
+    color: var(--branco);
+    
+}
 
 /* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -398,12 +438,13 @@ main h2 {
 
     /****** Cabeçalho ******/
     header {
-        height: 155px;
+        height: 160px;
     }
 
     #logo img {
-        width: 194px;
-        height: 194px;
+        width: 130px;
+        height: 130px;
+        padding: 15px 20px 10px 20px;
     }
 
     /* Transformação do menu */
@@ -412,7 +453,7 @@ main h2 {
     }
 
     nav ul {
-        margin-top: 50px;
+        margin-top: 60px;
         width: 100%;
         height: auto;
         position: static;
@@ -448,6 +489,14 @@ main h2 {
         background-attachment: fixed;
     }
 
+    #imagemDestaque img {
+        width: 250px;
+        height: 250px;
+        margin-right: 100px;
+        /* arredondar uma imagem quadrada */
+    }
+
+
     /******* Sobre ******/
     #sobre .container {
         flex-direction: row;
@@ -455,7 +504,7 @@ main h2 {
     }
 
     #video iframe {
-        margin: 0;
+        margin-right: 750px;
     }
 
     #faixaDestaque {
@@ -463,8 +512,23 @@ main h2 {
         padding: 50px 15px;
     }
     
+    #textoFaixa {
+        padding-left: 550px;
+        font-size: 2.5em;
+        color: var(--ciano);
+        align-self: center;
+        position: absolute;
+        padding-top: 100px;
+    }
+
+    .qrcode {
+        width: 450px;
+        height: 450px;
+    }
+
 }
 /* sessão de conteudo */
+
 
 #conteudo {
     padding: 20px 0px;

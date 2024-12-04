@@ -12,7 +12,7 @@
 
 <body>
     <!-- Cabeçalho -->
-    <header class="container">
+    <header class="container" id="inicio">
         <!-- Logotipo -->
         <div id="logo">
             <img src="img/logo.png" alt="logotipo Katchau">
@@ -23,9 +23,9 @@
             <label for="check">&#x268c;</label>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Drivers</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#conteudo">Conteúdos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -79,10 +79,10 @@
     <section id="faixaDestaque">
         <div class="container">
             <div id="imagemFaixa">
-
+                <img src="img/qrcode_manual.png" class="qrcode" alt="qrcode de um manual">
             </div>
             <div id="textoFaixa">
-                <img src="img/qrcode_manual.png" class="qrcode" alt="qrcode de um manual">
+                <h3>Escaneie nosso QRCOODE!</h3>
                 <!-- <a href="doc/manual_a88.pdf" class="botao">Veja o PDF</a> -->
             </div>
         </div>
@@ -93,7 +93,7 @@
     <!--       Cards      -->
     <section id="conteudo">
         <div class="container">
-            <h2>Contéudo</h2>
+            <h2>Conteúdo</h2>
             <div class="containercards">
             <div class="card">
                 <img src="img/DRIVERS.jpg" alt="placa de video">
@@ -109,15 +109,36 @@
             </div>
             <div class="card">
                 <img src="img/WIN.png" alt="windows">
-                <h3>OS/Softwares</h3>
-                <p>Otimização de OS ou Resolução de problemas com softwares instalados</p>
+                <h3>Softwares</h3>
+                <p>Otimização ou Resolução de problemas com softwares instalados</p>
                 <a href="#" class="botao">saiba +</a>
             </div>
     </section>
     
 
-    <!-- Download de um documento -->
-    
+
+    <!--       Rodapé      -->
+    <section id="contato">
+        <div class="topicon">
+            <h2>Contatos</h2>
+            <div class="cont">
+                <img src="img/email.png" alt="Email">
+                <p>KatchauInformatica@gmail.com(FICTICIO)</p>
+            </div>
+                <div class="cont">
+                <img src="img/whatsapp.png" alt="WPP">
+                <p>+55 11 95744-6458 (FICTICIO)</p>
+            </div>
+            <div class="cont">
+                <img src="img/instagram.png" alt="INSTA">
+                <p>@KatchauInfo(FICTICIO)</p>
+        </div>
+</section>
+
+
+    <!--Topo do site-->
+    <a href="#inicio" id="topo"><img src="img/topo.png" alt="topo"></a>
+
 </body>
 
 </html>
