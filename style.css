@@ -321,13 +321,31 @@ main h2 {
 } 
 
 /* área de contato */
-.topicon {
-    background: url(img/background.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 200px 0px 325px 0px;
+.rodape {
+    background: url(img/contato.jpg);
+    background-size: center;
+    padding-top: 50px;
+    overflow-y: hidden;
+}
+
+#contato {
+    margin-bottom: 70px;
+    text-align: center;
     color: var(--branco);
     
+}
+
+#email {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--branco);
+}
+#dados {
+    color: var(--ciano);
+}
+
+#social {
+    padding-left: 10px;
 }
 
 /* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
@@ -442,8 +460,8 @@ main h2 {
     }
 
     #logo img {
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
         padding: 15px 20px 10px 20px;
     }
 
@@ -541,6 +559,34 @@ main h2 {
 #conteudo h2 {
     margin-bottom: 25px;
 } 
+
+.rodape {
+    background: url(img/contato.jpg);
+    background-size: cover;
+
+}
+
+#contato {
+    margin-bottom: 100px;
+    text-align: center;
+    color: var(--branco);
+    padding-bottom: 50px;
+    transform: scale(1.2);
+}
+
+#email {
+    margin-top: 100px;
+    text-align: center;
+    color: var(--branco);
+    padding-bottom: 100px;
+    transform: scale(1.2);
+}
+#dados {
+    color: var(--ciano);
+}
+#social {
+    margin-top: 10px ;
+}
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
