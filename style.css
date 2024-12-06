@@ -57,16 +57,17 @@ body {
 .botao {
     text-decoration: none;
     color: var(--branco);
-    font-size: 1.3em;
+    font-size: 0.6em;
     font-weight: 700;
     background-color: var(--ciano);
     width: 160px;
-    padding: 10px 10px;
-    border: 2px solid var(--branco);
+    padding: 0px 10px;
+    border: 1px solid var(--branco);
     border-radius: 25px;
     align-self: center;
-    margin-top: 10px;
+    margin-top: 100px;
     align-items: center;
+    
 }
 
 /* Layout para 3 cartões */
@@ -79,9 +80,8 @@ body {
     margin-top: 45px;
     border-radius: 25px;
     text-align: center;
-    display: inline-block;
     margin-left: 65px;
-    overflow-x: hidden;
+    align-self: center;
 }
 
 .card img {
@@ -289,16 +289,15 @@ main h2 {
 
 #textoFaixa {
     padding-left: 70px;
-    font-size: 2.5em;
-    margin-top: 100px;
+    font-size: 1.3em;
     color: var(--ciano);
+    overflow-y: hidden;
 }
 
 #faixaDestaque .container {
     flex-direction: column;
 }
 .qrcode {
-    flex-direction: center;
     margin-top: 10px;
     width: 250px;
     height: 250px;
@@ -314,20 +313,40 @@ main h2 {
 #conteudo .container {
     flex-direction: column;
     align-items: center;
+    display: ruby;
 }
 
 #conteudo h2 {
     margin-bottom: 25px;
 } 
 
+
 /* área de contato */
-.topicon {
-    background: url(img/background.jpg);
+.rodape {
+    background: url(img/contato.jpg);
     background-size: cover;
     background-position: center;
-    padding: 200px 0px 325px 0px;
+    padding: 100px 0px 30px 0px;
+}
+
+#contato {
+    margin-bottom: 70px;
+    text-align: center;
     color: var(--branco);
     
+}
+
+#email {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--branco);
+}
+#dados {
+    color: var(--ciano);
+}
+
+#social {
+    padding-left: 10px;
 }
 
 /* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
@@ -442,8 +461,8 @@ main h2 {
     }
 
     #logo img {
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
         padding: 15px 20px 10px 20px;
     }
 
@@ -529,19 +548,43 @@ main h2 {
 }
 /* sessão de conteudo */
 
-
 #conteudo {
     padding: 20px 0px;
 }
 
 #conteudo .container {
-    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 200px;
 }
 
 #conteudo h2 {
     margin-bottom: 25px;
+    text-align: center;
 } 
 
+
+#contato {
+    margin-bottom: 100px;
+    text-align: center;
+    color: var(--branco);
+    padding-bottom: 50px;
+    transform: scale(1.2);
+}
+
+#email {
+    margin-top: 100px;
+    text-align: center;
+    color: var(--branco);
+    padding-bottom: 100px;
+    transform: scale(1.2);
+}
+#dados {
+    color: var(--ciano);
+}
+#social {
+    margin-top: 10px ;
+}
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
