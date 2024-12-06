@@ -65,9 +65,8 @@ body {
     border: 1px solid var(--branco);
     border-radius: 25px;
     align-self: center;
-    margin-top: 100px;
+    margin-top: 10px;
     align-items: center;
-    
 }
 
 /* Layout para 3 cartões */
@@ -289,7 +288,7 @@ main h2 {
 
 #textoFaixa {
     padding-left: 70px;
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: var(--ciano);
     overflow-y: hidden;
 }
